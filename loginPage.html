@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LoginPage</title>
+  <link rel="stylesheet" href="styleLoginPage.css">
+</head>
+
+<body>
+<main id="main-holder">
+  <h1 id="login-header">Login</h1>
+  <h2 id="register-header">Register</h2>
+
+  <div id="login-error-msg-holder">
+<!--    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>-->
+  </div>
+
+  <div id="register-msg-holder">
+    <p id="register-msg">Enter your username and password to register: </p>
+  </div>
+
+  <form id="login-form" target="_blank" action="excelReader.html" method="post">
+    <label for="username-field"></label><input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+    <label for="password-field"></label><input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+    <input type="submit" value="Login" id="login-form-submit" onclick="location.href = 'excelReader.html'">
+<!--    <button type="submit">Resume Page</button>-->
+  </form>
+
+  <form id="register-form">
+    <label for="usernameR-field"></label><input type="text" name="username" id="usernameR-field" class="register-form-field" placeholder="Username" required>
+    <label for="passwordR-field"></label><input type="password" name="password" id="passwordR-field" class="register-form-field" placeholder="Password" required>
+    <!--<label for="passwordRV-field"></label><input type="password" name="password" id="passwordRV-field" class="register-form-field" placeholder="Confirm Password"> -->
+    <input type="submit" value="Register" id="register-form-submit">
+  </form>
+</main>
+
+<script src="loginJS.js"></script>
+
+</body>
+</html>
