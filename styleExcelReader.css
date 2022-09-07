@@ -1,0 +1,15 @@
+body{
+    height: 130vh;
+    background-image: linear-gradient(to top left, #76fa76, #1d74d0);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: seashell;
+}
+
+form{
+    background-image: linear-gradient(to top left, lightgreen, lightskyblue);
+    opacity: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: black;
+}

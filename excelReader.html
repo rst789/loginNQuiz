@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Read Excel Test</title>
+    <link rel="stylesheet" href="styleExcelReader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+<h1>Quiz time!</h1>
+
+<h4>Upload an Excel file to get started.</h4>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script defer src="excelReaderArray.js"></script>
 <!--<script defer src="3b-read-json.js"></script>-->
 
 <input type="file" id="demo" accept=".xls,.xlsx"/>
-<input type="button" id = "load_quiz" value="Load Quiz"/>
+<input type="button" id = "load_quiz" value="Load Quiz" onclick="formVis()"/>
 
 <!--<p><input type="button" id="theButton" value="click me!" onclick="document.getElementById('theDiv').innerHTML='New'"/></p>-->
 
@@ -34,10 +43,14 @@
     <input type="radio" id="radio222" name="quizQ3" value="data[2][2]"/><label for="radio222"><div id="theDivRadio222"></div></label>
     <input type="radio" id="radio333" name="quizQ3" value="data[2][3]"/><label for="radio333"><div id="theDivRadio333"></div></label>
 
+    <br/>
+
     <input type="button" value="Submit" onclick="getScore()"/>
 
     <div id="result"></div>
 </form>
+
+<br/><br/>
 
 <canvas id="myCanvas"></canvas>
 <div id="myLegend"></div>
